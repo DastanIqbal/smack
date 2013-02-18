@@ -36,12 +36,16 @@
     <div id="main">
     	<h1>SMACK - Modular Software Verification Infrastructure</h1>
       <p>
-SMACK is a tool for statically checking properties of programs written in C/C++.
-For a given input program, SMACK checks for violations of user-provided
-assertions. The tool is open-source and integrates into the well-known LLVM
-compiler infrastructure. Therefore, SMACK can (at least in theory) check any
-program that can be compiled with LLVM. It should also be relatively easy to
-implement and try out different extensions on top of SMACK.      
+SMACK is a modular software verification infrastructure. The main purpose of
+SMACK is to lower the bar for experimenting with software verification and
+quickly prototyping custom software verifiers.  To achieve that, SMACK relies
+on the well-known <a title="LLVM" href="http://www.llvm.org"
+rel="external">LLVM</a> compiler infrastructure for its front-end, and <a
+title="Boogie" href="http://boogie.codeplex.com" rel="external">Boogie</a>
+intermediate verification language for its back-end. Such separation of
+concerns and modularity make implementing various additions and extensions to
+SMACK relatively easy.  Furthermore, the open architecture of SMACK encourages
+prototyping custom software verifiers on top of SMACK.
       </p>
     	<hr />
     </div>
